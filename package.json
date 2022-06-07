@@ -1,0 +1,31 @@
+{
+  "name": "actions-pull-request-add-comment",
+  "version": "1.0.0",
+  "description": "GitHub action for add comment on pull-request",
+  "main": "dist/index.js",
+  "scripts": {
+    "dist": "npx -p @zeit/ncc ncc build index.js",
+    "format": "prettier --write '*.js' --tab-width=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucketplace/actions-pull-request-add-comment"
+  },
+  "keywords": [],
+  "author": "zezaeoh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucketplace/pull-request-add-comment-action/issues"
+  },
+  "homepage": "https://github.com/bucketplace/pull-request-add-comment-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "@actions/io": "^1.0.0",
+    "@actions/exec": "^1.0.0",
+    "@actions/tool-cache": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
